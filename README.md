@@ -1,2 +1,2 @@
-# hdldesign
-HDL design for the lab
+# HDLDesign
+HDL design <i>for</i> the lab in **MIET**
