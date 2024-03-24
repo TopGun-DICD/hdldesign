@@ -9,6 +9,6 @@ module dcrtt(clk, d, r, q, nq);
         end
         else begin
             q <= d;
-            nq <= ~d;
+            n1 <= ~d;
         end
 endmodule

@@ -1,3 +1,36 @@
-# Prerequisites
-*.out
-*.vcd
+# var1
+design_01/*.out
+design_01/vcd/*.vcd
+
+# var1
+design_02/*.out
+design_02/vcd/*.vcd
+
+# var1
+design_03/*.out
+design_03/vcd/*.vcd
+
+# var1
+design_04/*.out
+design_04/vcd/*.vcd
+
+# var1
+design_05/*.out
+design_05/vcd/*.vcd
+
+# var1
+design_06/*.out
+design_06/vcd/*.vcd
+
+# var1
+design_07/*.out
+design_07/vcd/*.vcd
+
+# var1
+design_08/*.out
+design_08/vcd/*.vcd
+
+# var1
+design_09/*.out
+design_09/vcd/*.vcd
+
