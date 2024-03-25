@@ -16,9 +16,16 @@ module device(clk, r, EC, Q);
     not_and2    u7(.x2(nc3), .x1(q3_2), .y(c2));
     not_and3    u8(.x3(nc3), .x1(q3_2), .x2(nq2), .y(c1));
     not_and4    u9(.x1(nc3), .x2(q3_2), .x3(nq2), .x4(nq1), .y(c0));
+<<<<<<< HEAD
     sdctt       uA(.clk(c3), .d(nq3), .s(nr), .Q(q3_1), .nQ(nq3));
     sdctt       uB(.clk(c2), .d(nq2), .s(nr), .Q(Q[2]), .nQ(nq2));
     sdctt       uC(.clk(c1), .d(nq1), .s(nr), .Q(Q[1]), .nQ(nq1));
     sdctt       uD(.clk(c0), .d(nq0), .s(nr), .Q(Q[0]), .nQ(nq0));
+=======
+    sdctt       uA(.clk(c3), .d(nq3), .s(nr), .Q(q3_1), .nQ(nq3)),
+                uB(.clk(c2), .d(nq2), .s(nr), .Q(Q[2]), .nQ(nq2)),
+                uC(.clk(c1), .d(nq1), .s(nr), .Q(Q[1]), .nQ(nq1)),
+                uD(.clk(c0), .d(nq0), .s(nr), .Q(Q[0]), .nQ(nq0));
+>>>>>>> 351678bac6af7eb13613cfa5b2fd4313822e15e7
 endmodule
 
