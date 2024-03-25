@@ -34,4 +34,4 @@ git clone https://github.com/<ваше_имя_пользователя>/hdldesig
 ```
 git pull
 ```
-5. Создаёте **pull request**
+5. Создаёте **pull request**, отправляя мне на проверку результат своей работы.
