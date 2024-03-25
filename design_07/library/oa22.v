@@ -1,4 +1,4 @@
-module ao22(
+module oa22(
   input x1, x2, x3, x4,
   output y
 );
