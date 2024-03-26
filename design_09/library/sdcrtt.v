@@ -3,11 +3,11 @@ module sdcrtt(clk, d, s, r, q, nq);
     output reg  q, nq;
 
     always@(posedge clk, posedge r, posedge s)
-        if(s == 1'b1 && r == 1'b0) begin
+        if(s == 0 && r == 1) begin
             q <= 1'b0;
             nq <= 1'b1;
         end
-        else if(s == 1'b0 && r == 1'b1) begin
+        else if(s == 1 && r == 0) begin
             q <= 1'b1;
             nq <= 1'b0;
         end
