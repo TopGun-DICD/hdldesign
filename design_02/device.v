@@ -7,12 +7,12 @@ module device(clk, r, EC, Q);
 
     wire nr, nc, c3, c2, c1, c0, nc3, nq0, nq1, nq2, nq3, q3_1, q3_2;
 
-    not         u1(nr, r),
-                u2(nc, clk),
-                u3(nc3, c3),
-                u4(q3_2, q3_1),
-                u5(Q[3], q3_2);
-    nor         u6(c3, nc, EC);
+    not         u1(r, nr),
+                u2(clk, nc),
+                u3(c3, nc3),
+                u4(q3_1, q3_2),
+                u5(q3_2, Q[3]);
+    nor         u6(nc, EC, c3);
     not_and2    u7(nc3, q3_2, c2);
     not_and3    u8(nc3, q3_2, nq2, c1);
     not_and4    u9(nc3, q3_2, nq2, nq1, c0);
