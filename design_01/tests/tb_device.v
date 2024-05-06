@@ -5,12 +5,19 @@ module tb_design;
     reg     [3:0]   D;
     wire    [3:0]   Q;
 
-    device dut(.*);
+    device dut(
+        clk,
+        r,
+        PE,
+        D,
+        Q
+    );
 
     initial begin
         {clk, PE, D} = 0;
         r = 1'b1;
-        $dumpfile("./vcd/device.vcd");
+        $dumpfile("device.vcd");
+        // $dumpfile("./vcd/device.vcd");
         $dumpvars(0, tb_design);
         #1000
         $finish;
