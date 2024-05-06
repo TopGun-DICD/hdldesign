@@ -1,10 +1,8 @@
 module tb_design;
-    reg         clk,
-                r,
-                EC;
+    reg         clk,r,EC;
     wire [3:0]  Q;
 
-    device dut(.*);
+    device dut(.clk(clk), .r(r), .EC(EC), .Q(Q));
 
     initial begin
         {clk, r, EC} = 0;
